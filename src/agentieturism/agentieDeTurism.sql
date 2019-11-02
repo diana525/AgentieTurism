@@ -16,6 +16,32 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Table structure for table `agentie`
+--
+
+DROP TABLE IF EXISTS `agentie`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `agentie` (
+  `cod_agentie` int(11) NOT NULL AUTO_INCREMENT,
+  `denumire` varchar(100) DEFAULT NULL,
+  `adresa` varchar(100) DEFAULT NULL,
+  `telefon` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`cod_agentie`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `agentie`
+--
+
+LOCK TABLES `agentie` WRITE;
+/*!40000 ALTER TABLE `agentie` DISABLE KEYS */;
+INSERT INTO `agentie` VALUES (1,'Expedia','Str. Florilor, Nr.45, Bucuresti','021 985 475'),(2,'Priceline','Str. Dumbravei, Nr.20, Constanta','0241 485 363'),(3,'World Travel Inc.','Str. Mare, Nr. 123, Cluj-Napoca','0264 123 456'),(4,'Travizon','Str. Primaverii, Nr. 200, Iasi','0232 100 200'),(5,'Direct Travel','Str. Alba, Nr. 34, Timisoara','0256 808 502');
+/*!40000 ALTER TABLE `agentie` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `angajat`
 --
 
@@ -38,7 +64,7 @@ CREATE TABLE `angajat` (
   UNIQUE KEY `parola_UNIQUE` (`parola`),
   KEY `fk_angajat_functie_idx` (`cod_functie`),
   CONSTRAINT `fk_angajat_functie` FOREIGN KEY (`cod_functie`) REFERENCES `functie` (`cod_functie`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -47,7 +73,7 @@ CREATE TABLE `angajat` (
 
 LOCK TABLES `angajat` WRITE;
 /*!40000 ALTER TABLE `angajat` DISABLE KEYS */;
-INSERT INTO `angajat` VALUES (1,'Popescu','Adrian','0727808503','adi.popescu@yahoo.com','admin','1234',1),(2,'Ionescu','Elena','0727000113','elena_ion@gmail.com','ie100','1111',2),(3,'Cristescu','George','0728000111','cristigeo@gmail.com','cg100','1112',2),(4,'Matei','Corina','0729000111','corinamatei@gmail.com','cm100','2222',3),(5,'Mocanu','Alexandru','0730000111','alex_mocanu@yahoo.com','am100','2223',3),(6,'Vlad','Andrei','0787122322','avlad@yahoo.com','av100','3333',2),(12,'Bratu','Alexandra','0724896522','abratu@yahoocom','ab109','2221',2);
+INSERT INTO `angajat` VALUES (1,'Popescu','Adrian','0727808503','adi.popescu@yahoo.com','admin','1234',1),(2,'Ionescu','Elena','0727000113','elena_ion@gmail.com','ie100','1111',2),(3,'Cristescu','George','0728000111','cristigeo@gmail.com','cg100','1112',2),(4,'Matei','Corina','0729000111','corinamatei@gmail.com','cm100','2222',3),(5,'Mocanu','Alexandru','0730000111','alex_mocanu@yahoo.com','am100','2223',3),(6,'Vlad','Andrei','0787122322','avlad@yahoo.com','av100','3333',2),(12,'Bratu','Alexandra','0724896522','abratu@yahoocom','ab109','2221',2),(13,'Test','W','072756231','test@y.com','tw100','234',2),(23,'Costel','Enache','0722222222','costel@y.ro','ce123','parola',2),(27,'','','0755555555','','','',2),(34,'Ganea','Ion','123456','gi@gmail.com','gi100','1118',2);
 /*!40000 ALTER TABLE `angajat` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -75,7 +101,7 @@ CREATE TABLE `bilet` (
 
 LOCK TABLES `bilet` WRITE;
 /*!40000 ALTER TABLE `bilet` DISABLE KEYS */;
-INSERT INTO `bilet` VALUES (1,2,500,'2018-01-25'),(1,3,550,'2018-03-25'),(2,1,1000,'2018-08-20'),(6,5,220,'2018-08-15'),(3,4,500,'2018-12-20'),(1,6,560,'2018-12-20'),(4,1,550,'2018-12-20'),(1,1,800,'2018-12-27'),(3,3,520,'2019-01-02'),(1,1,800,'2019-01-02'),(3,2,560,'2019-01-08'),(1,1,800,'2019-01-08'),(2,1,1500,'2019-01-09'),(2,1,1500,'2019-01-10'),(1,1,800,'2019-01-10');
+INSERT INTO `bilet` VALUES (1,2,500,'2018-01-25'),(1,3,550,'2018-03-25'),(2,1,1000,'2018-08-20'),(6,5,220,'2018-08-15'),(3,4,500,'2018-12-20'),(1,6,560,'2018-12-20'),(4,1,550,'2018-12-20'),(1,1,800,'2018-12-27'),(3,3,520,'2019-01-02'),(1,1,800,'2019-01-02'),(3,2,560,'2019-01-08'),(1,1,800,'2019-01-08'),(2,1,1500,'2019-01-09'),(2,1,1500,'2019-01-10'),(1,1,800,'2019-01-10'),(1,1,1500,'2019-10-12'),(2,1,2000,'2019-10-12'),(1,1,800,'2019-10-12');
 /*!40000 ALTER TABLE `bilet` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -293,6 +319,29 @@ INSERT INTO `furnizori` VALUES (1,'AirFrance'),(2,'Tarom'),(3,'Blue Air'),(4,'Wi
 UNLOCK TABLES;
 
 --
+-- Table structure for table `imagini_hotel`
+--
+
+DROP TABLE IF EXISTS `imagini_hotel`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `imagini_hotel` (
+  `cod_hotel` int(11) DEFAULT NULL,
+  `path_imagine` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `imagini_hotel`
+--
+
+LOCK TABLES `imagini_hotel` WRITE;
+/*!40000 ALTER TABLE `imagini_hotel` DISABLE KEYS */;
+INSERT INTO `imagini_hotel` VALUES (12,'images/hoteluri/barcelona/apartHotel/3.png'),(12,'images/hoteluri/barcelona/apartHotel/1.png'),(12,'images/hoteluri/barcelona/apartHotel/2.png'),(13,'images/hoteluri/barcelona/CasaCamper/1.png'),(13,'images/hoteluri/barcelona/CasaCamper/2.png'),(13,'images/hoteluri/barcelona/CasaCamper/3.png'),(14,'images/hoteluri/barcelona/casa Fuster/4.png'),(14,'images/hoteluri/barcelona/casa Fuster/3.png'),(14,'images/hoteluri/barcelona/casa Fuster/2.png'),(14,'images/hoteluri/barcelona/casa Fuster/1.png'),(23,'images/hoteluri/roma/Hive/1.png'),(23,'images/hoteluri/roma/Hive/2.png'),(23,'images/hoteluri/roma/Hive/3.png'),(23,'images/hoteluri/roma/Hive/4.png'),(25,'images/hoteluri/roma/Liberty/1.png'),(25,'images/hoteluri/roma/Liberty/2.png'),(25,'images/hoteluri/roma/Liberty/3.png'),(25,'images/hoteluri/roma/Liberty/4.png'),(26,'images/hoteluri/roma/tree/1.png'),(26,'images/hoteluri/roma/tree/2.png'),(26,'images/hoteluri/roma/tree/3.png'),(27,'images/hoteluri/roma/Paolo/1.png'),(27,'images/hoteluri/roma/Paolo/2.png'),(27,'images/hoteluri/roma/Paolo/3.png'),(28,'images/hoteluri/roma/Tribune/1.png'),(28,'images/hoteluri/roma/Tribune/2.png'),(28,'images/hoteluri/roma/Tribune/3.png'),(15,'images/hoteluri/barcelona/catalonia/1.png'),(15,'images/hoteluri/barcelona/catalonia/2.png'),(15,'images/hoteluri/barcelona/catalonia/2.png'),(16,'images/hoteluri/barcelona/el palace/1.png'),(16,'images/hoteluri/barcelona/el palace/2.png'),(16,'images/hoteluri/barcelona/el palace/3.png'),(17,'images/hoteluri/barcelona/gallery/1.png'),(17,'images/hoteluri/barcelona/gallery/2.png'),(17,'images/hoteluri/barcelona/gallery/3.png'),(17,'images/hoteluri/barcelona/gallery/4.png'),(18,'images/hoteluri/barcelona/iberostar/1.png'),(18,'images/hoteluri/barcelona/iberostar/2.png'),(18,'images/hoteluri/barcelona/iberostar/3.png'),(19,'images/hoteluri/barcelona/olivia/1.png'),(19,'images/hoteluri/barcelona/olivia/2.png'),(19,'images/hoteluri/barcelona/olivia/3.png');
+/*!40000 ALTER TABLE `imagini_hotel` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `oras`
 --
 
@@ -344,6 +393,31 @@ INSERT INTO `orase` VALUES ('Viena','Austria'),('Graz','Austria'),('Linz','Austr
 UNLOCK TABLES;
 
 --
+-- Table structure for table `plecari_circuit`
+--
+
+DROP TABLE IF EXISTS `plecari_circuit`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `plecari_circuit` (
+  `cod_circuit` int(11) DEFAULT NULL,
+  `plecare` varchar(45) DEFAULT NULL,
+  `pret_circuit` int(11) DEFAULT NULL,
+  `data_plecare` date DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `plecari_circuit`
+--
+
+LOCK TABLES `plecari_circuit` WRITE;
+/*!40000 ALTER TABLE `plecari_circuit` DISABLE KEYS */;
+INSERT INTO `plecari_circuit` VALUES (14,'iulie 2019',1930,'2019-07-16'),(14,'august 2019',2500,'2019-08-16'),(14,'octombrie 2019',1500,'2019-10-16'),(15,'iunie 2019',2530,'2019-06-01'),(15,'iulie 2019',3000,'2019-07-07'),(15,'septembrie 2019',2500,'2019-09-17'),(16,'iunie 2019',3200,'2019-06-15'),(17,'octombrie 2019',2700,'2019-10-23'),(16,'octombrie 2019',2700,'2019-10-23'),(18,'septembrie 2019',2500,'2019-09-17'),(19,'iulie 2019',3000,'2019-07-07');
+/*!40000 ALTER TABLE `plecari_circuit` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `pret_circuit`
 --
 
@@ -354,9 +428,12 @@ CREATE TABLE `pret_circuit` (
   `circuit_cod_circuit` int(11) NOT NULL,
   `sezon_cod_sezon` int(11) NOT NULL,
   `valoare_circuit` int(11) DEFAULT NULL,
+  `cod_agentie_circuit` int(11) DEFAULT NULL,
   KEY `fk_circuit_has_sezon_sezon1_idx` (`sezon_cod_sezon`),
   KEY `fk_circuit_has_sezon_circuit1_idx` (`circuit_cod_circuit`),
-  CONSTRAINT `fk_circuit_has_sezon_sezon1` FOREIGN KEY (`sezon_cod_sezon`) REFERENCES `sezon` (`cod_sezon`)
+  KEY `fk_cod_agentie_circuit` (`cod_agentie_circuit`),
+  CONSTRAINT `fk_circuit_has_sezon_sezon1` FOREIGN KEY (`sezon_cod_sezon`) REFERENCES `sezon` (`cod_sezon`),
+  CONSTRAINT `fk_cod_agentie_circuit` FOREIGN KEY (`cod_agentie_circuit`) REFERENCES `agentie` (`cod_agentie`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -366,7 +443,7 @@ CREATE TABLE `pret_circuit` (
 
 LOCK TABLES `pret_circuit` WRITE;
 /*!40000 ALTER TABLE `pret_circuit` DISABLE KEYS */;
-INSERT INTO `pret_circuit` VALUES (1,1,5000),(1,2,2500),(1,3,3000),(1,5,4000),(1,6,5000),(2,6,7500),(2,5,5800),(2,4,5000),(2,3,3000),(3,1,8000),(4,1,9000),(4,2,7000),(4,6,5000),(5,6,5000),(9,3,4000),(9,5,4400),(9,1,3400),(10,5,5400),(10,6,8900),(10,7,5900);
+INSERT INTO `pret_circuit` VALUES (1,1,5000,2),(1,2,2500,3),(1,3,3000,3),(1,5,4000,1),(1,6,5000,1),(2,6,7500,5),(2,5,5800,4),(2,4,5000,5),(2,3,3000,1),(3,1,8000,4),(4,1,9000,2),(4,2,7000,4),(4,6,5000,3),(5,6,5000,5),(9,3,4000,3),(9,5,4400,3),(9,1,3400,3),(10,5,5400,1),(10,6,8900,1),(10,7,5900,1);
 /*!40000 ALTER TABLE `pret_circuit` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -381,8 +458,11 @@ CREATE TABLE `pret_sejur` (
   `sejur_cod_sejur` int(11) NOT NULL,
   `sezon_cod_sezon` int(11) NOT NULL,
   `valoare_sejur` int(11) DEFAULT NULL,
+  `cod_agentie` int(11) DEFAULT NULL,
   KEY `fk_sejur_has_sezon_sezon1_idx` (`sezon_cod_sezon`),
   KEY `fk_sejur_has_sezon_sejur1_idx` (`sejur_cod_sejur`),
+  KEY `fk_cod_agentie` (`cod_agentie`),
+  CONSTRAINT `fk_cod_agentie` FOREIGN KEY (`cod_agentie`) REFERENCES `agentie` (`cod_agentie`) ON DELETE CASCADE,
   CONSTRAINT `fk_sejur_has_sezon_sezon1` FOREIGN KEY (`sezon_cod_sezon`) REFERENCES `sezon` (`cod_sezon`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -393,8 +473,56 @@ CREATE TABLE `pret_sejur` (
 
 LOCK TABLES `pret_sejur` WRITE;
 /*!40000 ALTER TABLE `pret_sejur` DISABLE KEYS */;
-INSERT INTO `pret_sejur` VALUES (1,1,1500),(1,2,2000),(2,1,2000),(3,1,2200),(4,1,2200),(5,4,3000);
+INSERT INTO `pret_sejur` VALUES (1,1,1500,1),(1,2,2000,1),(2,1,2000,4),(3,1,2200,3),(4,1,2200,5),(5,4,3000,NULL);
 /*!40000 ALTER TABLE `pret_sejur` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `raport`
+--
+
+DROP TABLE IF EXISTS `raport`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `raport` (
+  `destinatie` varchar(45) NOT NULL,
+  `nr_rezervari` bigint(21) NOT NULL DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `raport`
+--
+
+LOCK TABLES `raport` WRITE;
+/*!40000 ALTER TABLE `raport` DISABLE KEYS */;
+INSERT INTO `raport` VALUES ('Paris',5),('Viena',1),('Ankara',2),('Berlin',2),('Salzburg',1),('Innsbruck',1);
+/*!40000 ALTER TABLE `raport` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `rezervare_camera`
+--
+
+DROP TABLE IF EXISTS `rezervare_camera`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `rezervare_camera` (
+  `cod_rezervare` int(11) NOT NULL AUTO_INCREMENT,
+  `cod_cam` int(11) DEFAULT NULL,
+  `cod_client` int(11) DEFAULT NULL,
+  PRIMARY KEY (`cod_rezervare`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `rezervare_camera`
+--
+
+LOCK TABLES `rezervare_camera` WRITE;
+/*!40000 ALTER TABLE `rezervare_camera` DISABLE KEYS */;
+INSERT INTO `rezervare_camera` VALUES (1,NULL,NULL),(2,26,1),(3,36,1),(4,28,1),(5,26,NULL),(6,26,1),(7,30,1);
+/*!40000 ALTER TABLE `rezervare_camera` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -439,7 +567,7 @@ CREATE TABLE `rezervare_sejur` (
   PRIMARY KEY (`cod_rezervare`),
   KEY `fk_sejur_has_client_client1_idx` (`cod_client`),
   KEY `fk_sejur_has_client_sejur1_idx` (`cod_sejur`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -448,7 +576,7 @@ CREATE TABLE `rezervare_sejur` (
 
 LOCK TABLES `rezervare_sejur` WRITE;
 /*!40000 ALTER TABLE `rezervare_sejur` DISABLE KEYS */;
-INSERT INTO `rezervare_sejur` VALUES (4,4,3),(3,1,7),(3,5,8),(4,2,9),(5,1,10),(5,2,11),(1,2,12),(1,3,13),(1,4,14),(6,4,15),(2,4,16),(1,4,17),(5,1,18);
+INSERT INTO `rezervare_sejur` VALUES (4,4,3),(3,1,7),(3,5,8),(4,2,9),(5,1,10),(5,2,11),(1,2,12),(1,3,13),(1,4,14),(6,4,15),(2,4,16),(1,4,17),(5,1,18),(1,1,19);
 /*!40000 ALTER TABLE `rezervare_sejur` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -488,6 +616,7 @@ DROP TABLE IF EXISTS `sezon`;
  SET character_set_client = utf8mb4 ;
 CREATE TABLE `sezon` (
   `cod_sezon` int(11) NOT NULL,
+  `denumire_sezon` varchar(60) DEFAULT NULL,
   `data_inceput` date NOT NULL,
   `data_sfarsit` date NOT NULL,
   PRIMARY KEY (`cod_sezon`)
@@ -500,7 +629,7 @@ CREATE TABLE `sezon` (
 
 LOCK TABLES `sezon` WRITE;
 /*!40000 ALTER TABLE `sezon` DISABLE KEYS */;
-INSERT INTO `sezon` VALUES (1,'2018-12-01','2019-01-15'),(2,'2019-01-16','2019-02-28'),(3,'2019-03-01','2019-04-01'),(4,'2019-04-02','2019-05-31'),(5,'2019-06-01','2019-07-20'),(6,'2019-07-21','2019-08-31'),(7,'2019-09-01','2019-11-30');
+INSERT INTO `sezon` VALUES (1,'Sarbatori de iarna','2018-12-01','2019-01-15'),(2,'Iarna','2019-01-16','2019-02-28'),(3,'Primavara - martie','2019-03-01','2019-04-01'),(4,'Primavara','2019-04-02','2019-05-31'),(5,'Inceput vacante','2019-06-01','2019-07-20'),(6,'Sezon vara','2019-07-21','2019-08-31'),(7,'Toamna','2019-09-01','2019-11-30');
 /*!40000 ALTER TABLE `sezon` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -533,6 +662,29 @@ INSERT INTO `transport` VALUES (1,'Airbus A300',260,1),(2,'Boeing 737',120,1),(3
 UNLOCK TABLES;
 
 --
+-- Table structure for table `vanzari_sezon`
+--
+
+DROP TABLE IF EXISTS `vanzari_sezon`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `vanzari_sezon` (
+  `denumire_sezon` varchar(60) DEFAULT NULL,
+  `vanzari` decimal(32,0) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `vanzari_sezon`
+--
+
+LOCK TABLES `vanzari_sezon` WRITE;
+/*!40000 ALTER TABLE `vanzari_sezon` DISABLE KEYS */;
+INSERT INTO `vanzari_sezon` VALUES ('Sarbatori de iarna',13000),('Iarna',2500),('Primavara - martie',9000),('Inceput vacante',15600),('Sezon vara',20000),('Primavara',10000);
+/*!40000 ALTER TABLE `vanzari_sezon` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `zbor`
 --
 
@@ -548,8 +700,11 @@ CREATE TABLE `zbor` (
   `ora_sosirii` int(11) DEFAULT NULL,
   `cod_transport` int(11) NOT NULL,
   `pret` int(11) NOT NULL,
+  `cod_agentie` int(11) DEFAULT NULL,
   PRIMARY KEY (`cod_zbor`),
   KEY `fk_zbor_transport1_idx` (`cod_transport`),
+  KEY `fk_cod_agentie_zbor` (`cod_agentie`),
+  CONSTRAINT `fk_cod_agentie_zbor` FOREIGN KEY (`cod_agentie`) REFERENCES `agentie` (`cod_agentie`) ON DELETE CASCADE,
   CONSTRAINT `fk_zbor_transport1` FOREIGN KEY (`cod_transport`) REFERENCES `transport` (`cod_transport`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -560,7 +715,7 @@ CREATE TABLE `zbor` (
 
 LOCK TABLES `zbor` WRITE;
 /*!40000 ALTER TABLE `zbor` DISABLE KEYS */;
-INSERT INTO `zbor` VALUES (1,'Viena','2018-12-10','2018-12-10',5,7,2,200),(2,'Paris','2018-12-10','2018-12-10',9,11,3,500),(3,'Paris','2018-12-10','2018-12-10',17,21,2,560),(4,'Ankara','2018-12-11','2018-12-11',10,13,4,620),(5,'Berlin','2018-11-15','2018-11-15',12,14,2,350),(6,'Berlin','2018-11-16','2018-11-16',6,9,3,300);
+INSERT INTO `zbor` VALUES (1,'Viena','2018-12-10','2018-12-10',5,7,2,200,2),(2,'Paris','2018-12-10','2018-12-10',9,11,3,500,1),(3,'Paris','2018-12-10','2018-12-10',17,21,2,560,3),(4,'Ankara','2018-12-11','2018-12-11',10,13,4,620,4),(5,'Berlin','2018-11-15','2018-11-15',12,14,2,350,5),(6,'Berlin','2018-11-16','2018-11-16',6,9,3,300,NULL);
 /*!40000 ALTER TABLE `zbor` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -573,4 +728,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-01-10 20:56:50
+-- Dump completed on 2019-11-02 18:27:06

@@ -42,6 +42,7 @@ import org.jfree.chart.plot.PiePlot;
 import org.jfree.data.general.DefaultPieDataset;
 import com.itextpdf.text.*;
 import com.itextpdf.text.pdf.*;
+import java.awt.BorderLayout;
 
 
 /**
@@ -1842,8 +1843,44 @@ public class PaginaAdmin extends javax.swing.JFrame {
     }
 
     private void tabelAgentiiMouseClicked(java.awt.event.MouseEvent evt) {
+        JFrame frame = new JFrame();
+        javax.swing.JTable angajati = new javax.swing.JTable();
+        angajati.setBackground(new java.awt.Color(204, 204, 204));
+        angajati.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        angajati.setModel(new javax.swing.table.DefaultTableModel(
+                new Object[][]{
 
-
+                },
+                new String[]{
+                        "Cod ", "Nume", "Prenume", "Telefon", "Adresa"
+                }
+        ));
+        jScrollPane1.setViewportView(angajati);
+        if (angajati.getColumnModel().getColumnCount() > 0) {
+            angajati.getColumnModel().getColumn(0).setMinWidth(40);
+            angajati.getColumnModel().getColumn(0).setPreferredWidth(40);
+            angajati.getColumnModel().getColumn(0).setMaxWidth(40);
+        }
+        try {
+            DefaultTableModel model = (DefaultTableModel) angajati.getModel();
+            Connection conn = getConnection();
+            String sql = "SELECT * FROM angajat where cod_agentie=?";
+            PreparedStatement stmt = conn.prepareStatement(sql);
+            stmt.setInt(1, Integer.valueOf(tabelAgentii.getValueAt(tabelAgentii.getSelectedRow(),0).toString()));
+            ResultSet rs = stmt.executeQuery();
+            while (rs.next()) {
+                model.addRow(new Object[]{"" + rs.getInt(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5)});
+            }
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(this, "Nu se pot accesa angajatii!");
+        }       
+        frame.add(angajati.getTableHeader(), BorderLayout.PAGE_START);
+        frame.add(angajati, BorderLayout.CENTER);      
+        pack();
+        setLocationRelativeTo(null);
+        frame.add(angajati);
+        frame.setSize(500, 300);
+        frame.setVisible(true);
     }
 
     /**

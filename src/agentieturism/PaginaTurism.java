@@ -2511,7 +2511,10 @@ public class PaginaTurism extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void vizCircuitMeniuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vizCircuitMeniuActionPerformed
+        DefaultTableModel model = (DefaultTableModel) tabelCircuit.getModel();
+        model.setRowCount(0);
         setPanelVisible(vizualizareCircuit);
+        fillCircuite();
     }//GEN-LAST:event_vizCircuitMeniuActionPerformed
 
     private void adaugSejurMeniuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaugSejurMeniuActionPerformed
@@ -2534,7 +2537,10 @@ public class PaginaTurism extends javax.swing.JFrame {
     }//GEN-LAST:event_inapoiSejurActionPerformed
 
     private void vizSejurMeniuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vizSejurMeniuActionPerformed
+        DefaultTableModel model = (DefaultTableModel) tabelSejur.getModel();
+        model.setRowCount(0);
         setPanelVisible(vizualizareSejur);
+        fillSejur();
     }//GEN-LAST:event_vizSejurMeniuActionPerformed
 
     private void comboCircuiteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboCircuiteActionPerformed

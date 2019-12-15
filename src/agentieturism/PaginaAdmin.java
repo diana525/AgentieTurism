@@ -1476,9 +1476,12 @@ public class PaginaAdmin extends javax.swing.JFrame {
                 PreparedStatement ps = con.prepareStatement(query);
                 ps.setString(1, text);
                 ResultSet rs = ps.executeQuery();
-                while (rs.next() && rs1.next()) {
+               if (rs.next() && rs1.next()) {
                     model.addRow(new Object[]{"" + rs.getInt(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5),
                             rs1.getString(1)});
+                }
+                else{
+                    JOptionPane.showMessageDialog(this, "Nu exista angajat cu acest nume.");
                 }
                 fieldCautare.setText("");
                 radioNume.setSelected(false);
@@ -1487,9 +1490,11 @@ public class PaginaAdmin extends javax.swing.JFrame {
                 PreparedStatement ps = con.prepareStatement(query);
                 ps.setString(1, text);
                 ResultSet rs = ps.executeQuery();
-                while (rs.next() && rs1.next()) {
+                if (rs.next() && rs1.next()) {
                     model.addRow(new Object[]{"" + rs.getInt(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5),
                             rs1.getString(1)});
+                }else{
+                    JOptionPane.showMessageDialog(this, "Nu exista angajat cu acest cod.");
                 }
                 fieldCautare.setText("");
                 radioCod.setSelected(false);

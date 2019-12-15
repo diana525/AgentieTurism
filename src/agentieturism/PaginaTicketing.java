@@ -1285,6 +1285,7 @@ public class PaginaTicketing extends javax.swing.JFrame {
 
     private void butonContracteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butonContracteActionPerformed
         setPanelVisible(vizualizareContracte);
+        afiseazaContracte();
     }//GEN-LAST:event_butonContracteActionPerformed
 
     private void zboruriCautMeniuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_zboruriCautMeniuActionPerformed

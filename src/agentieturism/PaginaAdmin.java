@@ -55,8 +55,7 @@ public class PaginaAdmin extends javax.swing.JFrame {
      */
     public PaginaAdmin() {
         initComponents();
-        setPanelVisible(pagPrincAdmin);
-        afiseazaAngajati();
+        setPanelVisible(pagPrincAdmin);        
         afiseazaAgentii1();
         afiseazaFurnizori();
         fillFurnizori();
@@ -1291,7 +1290,10 @@ public class PaginaAdmin extends javax.swing.JFrame {
     }
 
     private void vizAngMeniuItemActionPerformed(java.awt.event.ActionEvent evt) {
+        DefaultTableModel model = (DefaultTableModel) tabelAngajati.getModel();
+        model.setRowCount(0);
         setPanelVisible(vizualizareAngajati);
+        afiseazaAngajati();
     }
 
     private void butonInapoiActionPerformed(java.awt.event.ActionEvent evt) {
@@ -1347,7 +1349,7 @@ public class PaginaAdmin extends javax.swing.JFrame {
                 coda = rs2.getInt(1);
             }
 
-            PreparedStatement ps1 = conn.prepareStatement("INSERT INTO contract VALUES (1,?,?,?,?)");
+            PreparedStatement ps1 = conn.prepareStatement("INSERT INTO contract VALUES (?,?,?,?)");
             ps1.setInt(1, coda);
             ps1.setInt(2, codf);
             ps1.setNull(3, Types.INTEGER);
@@ -1598,6 +1600,7 @@ public class PaginaAdmin extends javax.swing.JFrame {
             denAg1.setText("");
             tlfAg1.setText("");
             addAg1.setText("");
+            afiseazaAgentii1();
 
         } catch (SQLException ex) {
             System.out.println(ex.getMessage());

@@ -333,8 +333,7 @@ CREATE TABLE `oras` (
   `Nume_oras` varchar(45) NOT NULL,
   `Tara` varchar(45) NOT NULL,
   `cod_circuit` int(11) NOT NULL,
-  PRIMARY KEY (`cod_oras`),
-  UNIQUE KEY `Nume_oras_UNIQUE` (`Nume_oras`),
+  PRIMARY KEY (`cod_oras`),  
   KEY `fk_oras_circuit1_idx` (`cod_circuit`)
 ) ENGINE=InnoDB AUTO_INCREMENT=101 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;

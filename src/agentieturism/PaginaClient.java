@@ -291,6 +291,51 @@ public class PaginaClient extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        vizualizareCircuit = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        comboCircuite = new javax.swing.JComboBox<>();
+        jLabel6 = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        tabelOrase = new javax.swing.JTable();
+        jButton1 = new javax.swing.JButton();
+        butonCautareCircuit = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        cautareZbor = new javax.swing.JPanel();
+        jLabel25 = new javax.swing.JLabel();
+        Destinatie = new javax.swing.JRadioButton();
+        dataPlecareRadio = new javax.swing.JRadioButton();
+        oraPlecareButon = new javax.swing.JRadioButton();
+        oraSosireButon = new javax.swing.JRadioButton();
+        butonCautaFiltrare = new javax.swing.JButton();
+        fieldFiltrare = new javax.swing.JTextField();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        tabelZboruri1 = new javax.swing.JTable();
+        jButton5 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
+        jLabel55 = new javax.swing.JLabel();
+        cautareCircuit = new javax.swing.JPanel();
+        jLabel69 = new javax.swing.JLabel();
+        radioDenumireCircuit = new javax.swing.JRadioButton();
+        radioOras = new javax.swing.JRadioButton();
+        radioTara = new javax.swing.JRadioButton();
+        fieldCircuit = new javax.swing.JTextField();
+        butonCautaCircuit = new javax.swing.JButton();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        tabelCircuit = new javax.swing.JTable();
+        jButton9 = new javax.swing.JButton();
+        jLabel70 = new javax.swing.JLabel();
+        jLabel54 = new javax.swing.JLabel();
+        cautareSejur = new javax.swing.JPanel();
+        jLabel73 = new javax.swing.JLabel();
+        radioOrasPlecare = new javax.swing.JRadioButton();
+        radioOrasSosire = new javax.swing.JRadioButton();
+        radioDataPlecare = new javax.swing.JRadioButton();
+        fieldCautaSejur = new javax.swing.JTextField();
+        butonCautaSejur = new javax.swing.JButton();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        tabelCautaSejur = new javax.swing.JTable();
+        jButton10 = new javax.swing.JButton();
+        jLabel53 = new javax.swing.JLabel();
         rezervareCircuit = new javax.swing.JPanel();
         jLabel72 = new javax.swing.JLabel();
         jLabel74 = new javax.swing.JLabel();
@@ -351,15 +396,6 @@ public class PaginaClient extends javax.swing.JFrame {
         tabelSejur = new javax.swing.JTable();
         inapoiSejur = new javax.swing.JButton();
         jLabel47 = new javax.swing.JLabel();
-        vizualizareCircuit = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
-        comboCircuite = new javax.swing.JComboBox<>();
-        jLabel6 = new javax.swing.JLabel();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        tabelOrase = new javax.swing.JTable();
-        jButton1 = new javax.swing.JButton();
-        butonCautareCircuit = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
         vizualizareCazare = new javax.swing.JPanel();
         hotelTropical = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
@@ -428,42 +464,6 @@ public class PaginaClient extends javax.swing.JFrame {
         jLabel40 = new javax.swing.JLabel();
         jLabel43 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
-        cautareSejur = new javax.swing.JPanel();
-        jLabel73 = new javax.swing.JLabel();
-        radioOrasPlecare = new javax.swing.JRadioButton();
-        radioOrasSosire = new javax.swing.JRadioButton();
-        radioDataPlecare = new javax.swing.JRadioButton();
-        fieldCautaSejur = new javax.swing.JTextField();
-        butonCautaSejur = new javax.swing.JButton();
-        jScrollPane5 = new javax.swing.JScrollPane();
-        tabelCautaSejur = new javax.swing.JTable();
-        jButton10 = new javax.swing.JButton();
-        jLabel53 = new javax.swing.JLabel();
-        cautareCircuit = new javax.swing.JPanel();
-        jLabel69 = new javax.swing.JLabel();
-        radioDenumireCircuit = new javax.swing.JRadioButton();
-        radioOras = new javax.swing.JRadioButton();
-        radioTara = new javax.swing.JRadioButton();
-        fieldCircuit = new javax.swing.JTextField();
-        butonCautaCircuit = new javax.swing.JButton();
-        jScrollPane4 = new javax.swing.JScrollPane();
-        tabelCircuit = new javax.swing.JTable();
-        jButton9 = new javax.swing.JButton();
-        jLabel70 = new javax.swing.JLabel();
-        jLabel54 = new javax.swing.JLabel();
-        cautareZbor = new javax.swing.JPanel();
-        jLabel25 = new javax.swing.JLabel();
-        Destinatie = new javax.swing.JRadioButton();
-        dataPlecareRadio = new javax.swing.JRadioButton();
-        oraPlecareButon = new javax.swing.JRadioButton();
-        oraSosireButon = new javax.swing.JRadioButton();
-        butonCautaFiltrare = new javax.swing.JButton();
-        fieldFiltrare = new javax.swing.JTextField();
-        jScrollPane6 = new javax.swing.JScrollPane();
-        tabelZboruri1 = new javax.swing.JTable();
-        jButton5 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jLabel55 = new javax.swing.JLabel();
         rezervarileMele = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         jLabel32 = new javax.swing.JLabel();
@@ -529,6 +529,341 @@ public class PaginaClient extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(710, 550));
         getContentPane().setLayout(null);
+
+        vizualizareCircuit.setLayout(null);
+
+        jLabel3.setFont(new java.awt.Font("Lucida Bright", 1, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel3.setText("CIRCUITE");
+        vizualizareCircuit.add(jLabel3);
+        jLabel3.setBounds(300, 30, 90, 40);
+
+        comboCircuite.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        comboCircuite.setForeground(new java.awt.Color(0, 0, 0));
+        comboCircuite.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comboCircuiteActionPerformed(evt);
+            }
+        });
+        vizualizareCircuit.add(comboCircuite);
+        comboCircuite.setBounds(150, 110, 170, 30);
+
+        jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel6.setText("Denumire");
+        vizualizareCircuit.add(jLabel6);
+        jLabel6.setBounds(60, 110, 90, 30);
+
+        tabelOrase.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        tabelOrase.setForeground(new java.awt.Color(0, 0, 0));
+        tabelOrase.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Oras", "Tara"
+            }
+        ));
+        jScrollPane2.setViewportView(tabelOrase);
+
+        vizualizareCircuit.add(jScrollPane2);
+        jScrollPane2.setBounds(150, 190, 430, 100);
+
+        jButton1.setBackground(new java.awt.Color(0, 102, 102));
+        jButton1.setFont(new java.awt.Font("Lucida Bright", 1, 14)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setText("Inapoi");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        vizualizareCircuit.add(jButton1);
+        jButton1.setBounds(520, 360, 90, 40);
+
+        butonCautareCircuit.setBackground(new java.awt.Color(0, 102, 102));
+        butonCautareCircuit.setFont(new java.awt.Font("Lucida Bright", 1, 14)); // NOI18N
+        butonCautareCircuit.setForeground(new java.awt.Color(255, 255, 255));
+        butonCautareCircuit.setText("Cautare");
+        butonCautareCircuit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                butonCautareCircuitActionPerformed(evt);
+            }
+        });
+        vizualizareCircuit.add(butonCautareCircuit);
+        butonCautareCircuit.setBounds(120, 360, 100, 40);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/agentieturism/bgClouds.jpg"))); // NOI18N
+        vizualizareCircuit.add(jLabel2);
+        jLabel2.setBounds(0, 0, 720, 570);
+
+        getContentPane().add(vizualizareCircuit);
+        vizualizareCircuit.setBounds(0, 0, 700, 520);
+
+        cautareZbor.setLayout(null);
+
+        jLabel25.setFont(new java.awt.Font("Lucida Bright", 1, 18)); // NOI18N
+        jLabel25.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel25.setText("Filtrare zbor dupa");
+        cautareZbor.add(jLabel25);
+        jLabel25.setBounds(50, 50, 180, 22);
+
+        Destinatie.setFont(new java.awt.Font("Lucida Bright", 1, 14)); // NOI18N
+        Destinatie.setForeground(new java.awt.Color(0, 0, 0));
+        Destinatie.setText("Destinatie");
+        cautareZbor.add(Destinatie);
+        Destinatie.setBounds(50, 90, 130, 28);
+
+        dataPlecareRadio.setFont(new java.awt.Font("Lucida Bright", 1, 14)); // NOI18N
+        dataPlecareRadio.setForeground(new java.awt.Color(0, 0, 0));
+        dataPlecareRadio.setText("Data Plecare");
+        cautareZbor.add(dataPlecareRadio);
+        dataPlecareRadio.setBounds(190, 90, 140, 28);
+
+        oraPlecareButon.setFont(new java.awt.Font("Lucida Bright", 1, 14)); // NOI18N
+        oraPlecareButon.setForeground(new java.awt.Color(0, 0, 0));
+        oraPlecareButon.setText("Ora Plecare");
+        cautareZbor.add(oraPlecareButon);
+        oraPlecareButon.setBounds(350, 90, 140, 28);
+
+        oraSosireButon.setFont(new java.awt.Font("Lucida Bright", 1, 14)); // NOI18N
+        oraSosireButon.setForeground(new java.awt.Color(0, 0, 0));
+        oraSosireButon.setText("Ora Sosire");
+        cautareZbor.add(oraSosireButon);
+        oraSosireButon.setBounds(500, 90, 130, 28);
+
+        butonCautaFiltrare.setBackground(new java.awt.Color(0, 102, 102));
+        butonCautaFiltrare.setFont(new java.awt.Font("Lucida Bright", 1, 14)); // NOI18N
+        butonCautaFiltrare.setForeground(new java.awt.Color(255, 255, 255));
+        butonCautaFiltrare.setText("Cauta");
+        butonCautaFiltrare.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                butonCautaFiltrareActionPerformed(evt);
+            }
+        });
+        cautareZbor.add(butonCautaFiltrare);
+        butonCautaFiltrare.setBounds(430, 140, 80, 33);
+
+        fieldFiltrare.setFont(new java.awt.Font("Lucida Bright", 0, 12)); // NOI18N
+        fieldFiltrare.setForeground(new java.awt.Color(0, 0, 0));
+        cautareZbor.add(fieldFiltrare);
+        fieldFiltrare.setBounds(150, 140, 200, 30);
+
+        tabelZboruri1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        tabelZboruri1.setForeground(new java.awt.Color(0, 0, 0));
+        tabelZboruri1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Destinatie", "Data plecare", "Data sosire", "Ora plecare", "Ora sosire", "Avion"
+            }
+        ));
+        jScrollPane6.setViewportView(tabelZboruri1);
+
+        cautareZbor.add(jScrollPane6);
+        jScrollPane6.setBounds(0, 220, 700, 130);
+
+        jButton5.setBackground(new java.awt.Color(0, 102, 102));
+        jButton5.setFont(new java.awt.Font("Lucida Bright", 1, 14)); // NOI18N
+        jButton5.setForeground(new java.awt.Color(255, 255, 255));
+        jButton5.setText("Rezerva Acum!");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+        cautareZbor.add(jButton5);
+        jButton5.setBounds(250, 380, 160, 50);
+
+        jButton7.setBackground(new java.awt.Color(0, 102, 102));
+        jButton7.setFont(new java.awt.Font("Lucida Bright", 1, 14)); // NOI18N
+        jButton7.setForeground(new java.awt.Color(255, 255, 255));
+        jButton7.setText("Inapoi");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+        cautareZbor.add(jButton7);
+        jButton7.setBounds(540, 450, 90, 33);
+
+        jLabel55.setIcon(new javax.swing.ImageIcon(getClass().getResource("/agentieturism/clientbg.jpg"))); // NOI18N
+        cautareZbor.add(jLabel55);
+        jLabel55.setBounds(0, 0, 700, 540);
+
+        getContentPane().add(cautareZbor);
+        cautareZbor.setBounds(0, 0, 700, 520);
+
+        cautareCircuit.setLayout(null);
+
+        jLabel69.setFont(new java.awt.Font("Lucida Bright", 1, 18)); // NOI18N
+        jLabel69.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel69.setText("Cauta Circuit");
+        cautareCircuit.add(jLabel69);
+        jLabel69.setBounds(280, 20, 120, 40);
+
+        radioDenumireCircuit.setFont(new java.awt.Font("Lucida Bright", 1, 14)); // NOI18N
+        radioDenumireCircuit.setForeground(new java.awt.Color(0, 0, 0));
+        radioDenumireCircuit.setText("Denumire");
+        cautareCircuit.add(radioDenumireCircuit);
+        radioDenumireCircuit.setBounds(100, 110, 102, 28);
+
+        radioOras.setFont(new java.awt.Font("Lucida Bright", 1, 14)); // NOI18N
+        radioOras.setForeground(new java.awt.Color(0, 0, 0));
+        radioOras.setText("Oras");
+        cautareCircuit.add(radioOras);
+        radioOras.setBounds(310, 110, 80, 28);
+
+        radioTara.setFont(new java.awt.Font("Lucida Bright", 1, 14)); // NOI18N
+        radioTara.setForeground(new java.awt.Color(0, 0, 0));
+        radioTara.setText("Tara");
+        cautareCircuit.add(radioTara);
+        radioTara.setBounds(480, 110, 130, 28);
+
+        fieldCircuit.setFont(new java.awt.Font("Lucida Bright", 1, 14)); // NOI18N
+        fieldCircuit.setForeground(new java.awt.Color(0, 0, 0));
+        fieldCircuit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fieldCircuitActionPerformed(evt);
+            }
+        });
+        cautareCircuit.add(fieldCircuit);
+        fieldCircuit.setBounds(260, 160, 180, 30);
+
+        butonCautaCircuit.setBackground(new java.awt.Color(0, 102, 102));
+        butonCautaCircuit.setFont(new java.awt.Font("Lucida Bright", 1, 14)); // NOI18N
+        butonCautaCircuit.setForeground(new java.awt.Color(255, 255, 255));
+        butonCautaCircuit.setText("Cauta");
+        butonCautaCircuit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                butonCautaCircuitActionPerformed(evt);
+            }
+        });
+        cautareCircuit.add(butonCautaCircuit);
+        butonCautaCircuit.setBounds(300, 210, 100, 40);
+
+        tabelCircuit.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        tabelCircuit.setForeground(new java.awt.Color(0, 0, 0));
+        tabelCircuit.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Denumire", "Orase", "Tari"
+            }
+        ));
+        jScrollPane4.setViewportView(tabelCircuit);
+
+        cautareCircuit.add(jScrollPane4);
+        jScrollPane4.setBounds(0, 280, 700, 130);
+
+        jButton9.setBackground(new java.awt.Color(0, 102, 102));
+        jButton9.setFont(new java.awt.Font("Lucida Bright", 1, 14)); // NOI18N
+        jButton9.setForeground(new java.awt.Color(255, 255, 255));
+        jButton9.setText("Inapoi");
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
+        cautareCircuit.add(jButton9);
+        jButton9.setBounds(540, 430, 100, 40);
+
+        jLabel70.setFont(new java.awt.Font("Lucida Bright", 1, 16)); // NOI18N
+        jLabel70.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel70.setText("Filtrare dupa");
+        cautareCircuit.add(jLabel70);
+        jLabel70.setBounds(30, 60, 120, 40);
+
+        jLabel54.setIcon(new javax.swing.ImageIcon(getClass().getResource("/agentieturism/bgClouds.jpg"))); // NOI18N
+        cautareCircuit.add(jLabel54);
+        jLabel54.setBounds(0, 0, 700, 520);
+
+        getContentPane().add(cautareCircuit);
+        cautareCircuit.setBounds(0, 0, 700, 520);
+
+        cautareSejur.setLayout(null);
+
+        jLabel73.setFont(new java.awt.Font("Lucida Bright", 1, 18)); // NOI18N
+        jLabel73.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel73.setText("Cauta Sejur");
+        cautareSejur.add(jLabel73);
+        jLabel73.setBounds(280, 40, 120, 40);
+
+        radioOrasPlecare.setFont(new java.awt.Font("Lucida Bright", 1, 14)); // NOI18N
+        radioOrasPlecare.setForeground(new java.awt.Color(0, 0, 0));
+        radioOrasPlecare.setText("Oras Plecare");
+        cautareSejur.add(radioOrasPlecare);
+        radioOrasPlecare.setBounds(100, 110, 130, 28);
+
+        radioOrasSosire.setFont(new java.awt.Font("Lucida Bright", 1, 14)); // NOI18N
+        radioOrasSosire.setForeground(new java.awt.Color(0, 0, 0));
+        radioOrasSosire.setText("Destinatie");
+        cautareSejur.add(radioOrasSosire);
+        radioOrasSosire.setBounds(300, 110, 110, 28);
+
+        radioDataPlecare.setFont(new java.awt.Font("Lucida Bright", 1, 14)); // NOI18N
+        radioDataPlecare.setForeground(new java.awt.Color(0, 0, 0));
+        radioDataPlecare.setText("Data plecare");
+        cautareSejur.add(radioDataPlecare);
+        radioDataPlecare.setBounds(480, 110, 130, 28);
+
+        fieldCautaSejur.setFont(new java.awt.Font("Lucida Bright", 1, 14)); // NOI18N
+        fieldCautaSejur.setForeground(new java.awt.Color(0, 0, 0));
+        fieldCautaSejur.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fieldCautaSejurActionPerformed(evt);
+            }
+        });
+        cautareSejur.add(fieldCautaSejur);
+        fieldCautaSejur.setBounds(260, 160, 180, 30);
+
+        butonCautaSejur.setBackground(new java.awt.Color(0, 102, 102));
+        butonCautaSejur.setFont(new java.awt.Font("Lucida Bright", 1, 14)); // NOI18N
+        butonCautaSejur.setForeground(new java.awt.Color(255, 255, 255));
+        butonCautaSejur.setText("Cauta");
+        butonCautaSejur.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                butonCautaSejurActionPerformed(evt);
+            }
+        });
+        cautareSejur.add(butonCautaSejur);
+        butonCautaSejur.setBounds(300, 210, 100, 40);
+
+        tabelCautaSejur.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        tabelCautaSejur.setForeground(new java.awt.Color(0, 0, 0));
+        tabelCautaSejur.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Oras plecare", "Destinatie", "Data plecare", "Data sosire"
+            }
+        ));
+        jScrollPane5.setViewportView(tabelCautaSejur);
+
+        cautareSejur.add(jScrollPane5);
+        jScrollPane5.setBounds(0, 280, 700, 130);
+
+        jButton10.setBackground(new java.awt.Color(0, 102, 102));
+        jButton10.setFont(new java.awt.Font("Lucida Bright", 1, 14)); // NOI18N
+        jButton10.setForeground(new java.awt.Color(255, 255, 255));
+        jButton10.setText("Inapoi");
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
+        cautareSejur.add(jButton10);
+        jButton10.setBounds(540, 430, 100, 40);
+
+        jLabel53.setIcon(new javax.swing.ImageIcon(getClass().getResource("/agentieturism/sejur1.jpg"))); // NOI18N
+        cautareSejur.add(jLabel53);
+        jLabel53.setBounds(0, 0, 700, 540);
+
+        getContentPane().add(cautareSejur);
+        cautareSejur.setBounds(0, 0, 700, 520);
 
         rezervareCircuit.setLayout(null);
 
@@ -1009,76 +1344,6 @@ public class PaginaClient extends javax.swing.JFrame {
         getContentPane().add(vizualizareSejur);
         vizualizareSejur.setBounds(0, 0, 700, 520);
 
-        vizualizareCircuit.setLayout(null);
-
-        jLabel3.setFont(new java.awt.Font("Lucida Bright", 1, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel3.setText("CIRCUITE");
-        vizualizareCircuit.add(jLabel3);
-        jLabel3.setBounds(300, 30, 90, 40);
-
-        comboCircuite.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        comboCircuite.setForeground(new java.awt.Color(0, 0, 0));
-        comboCircuite.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                comboCircuiteActionPerformed(evt);
-            }
-        });
-        vizualizareCircuit.add(comboCircuite);
-        comboCircuite.setBounds(150, 110, 170, 30);
-
-        jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel6.setText("Denumire");
-        vizualizareCircuit.add(jLabel6);
-        jLabel6.setBounds(60, 110, 90, 30);
-
-        tabelOrase.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        tabelOrase.setForeground(new java.awt.Color(0, 0, 0));
-        tabelOrase.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-
-            },
-            new String [] {
-                "Oras", "Tara"
-            }
-        ));
-        jScrollPane2.setViewportView(tabelOrase);
-
-        vizualizareCircuit.add(jScrollPane2);
-        jScrollPane2.setBounds(150, 190, 430, 100);
-
-        jButton1.setBackground(new java.awt.Color(0, 102, 102));
-        jButton1.setFont(new java.awt.Font("Lucida Bright", 1, 14)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Inapoi");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        vizualizareCircuit.add(jButton1);
-        jButton1.setBounds(520, 360, 90, 40);
-
-        butonCautareCircuit.setBackground(new java.awt.Color(0, 102, 102));
-        butonCautareCircuit.setFont(new java.awt.Font("Lucida Bright", 1, 14)); // NOI18N
-        butonCautareCircuit.setForeground(new java.awt.Color(255, 255, 255));
-        butonCautareCircuit.setText("Cautare");
-        butonCautareCircuit.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                butonCautareCircuitActionPerformed(evt);
-            }
-        });
-        vizualizareCircuit.add(butonCautareCircuit);
-        butonCautareCircuit.setBounds(120, 360, 100, 40);
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/agentieturism/bgClouds.jpg"))); // NOI18N
-        vizualizareCircuit.add(jLabel2);
-        jLabel2.setBounds(0, 0, 720, 570);
-
-        getContentPane().add(vizualizareCircuit);
-        vizualizareCircuit.setBounds(0, 0, 700, 520);
-
         vizualizareCazare.setLayout(null);
 
         hotelTropical.setIcon(new javax.swing.ImageIcon(getClass().getResource("/agentieturism/hotel1.jpg"))); // NOI18N
@@ -1518,271 +1783,6 @@ public class PaginaClient extends javax.swing.JFrame {
 
         getContentPane().add(TurciaHotels);
         TurciaHotels.setBounds(0, 0, 700, 520);
-
-        cautareSejur.setLayout(null);
-
-        jLabel73.setFont(new java.awt.Font("Lucida Bright", 1, 18)); // NOI18N
-        jLabel73.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel73.setText("Cauta Sejur");
-        cautareSejur.add(jLabel73);
-        jLabel73.setBounds(280, 40, 120, 40);
-
-        radioOrasPlecare.setFont(new java.awt.Font("Lucida Bright", 1, 14)); // NOI18N
-        radioOrasPlecare.setForeground(new java.awt.Color(0, 0, 0));
-        radioOrasPlecare.setText("Oras Plecare");
-        cautareSejur.add(radioOrasPlecare);
-        radioOrasPlecare.setBounds(100, 110, 130, 28);
-
-        radioOrasSosire.setFont(new java.awt.Font("Lucida Bright", 1, 14)); // NOI18N
-        radioOrasSosire.setForeground(new java.awt.Color(0, 0, 0));
-        radioOrasSosire.setText("Destinatie");
-        cautareSejur.add(radioOrasSosire);
-        radioOrasSosire.setBounds(300, 110, 110, 28);
-
-        radioDataPlecare.setFont(new java.awt.Font("Lucida Bright", 1, 14)); // NOI18N
-        radioDataPlecare.setForeground(new java.awt.Color(0, 0, 0));
-        radioDataPlecare.setText("Data plecare");
-        cautareSejur.add(radioDataPlecare);
-        radioDataPlecare.setBounds(480, 110, 130, 28);
-
-        fieldCautaSejur.setFont(new java.awt.Font("Lucida Bright", 1, 14)); // NOI18N
-        fieldCautaSejur.setForeground(new java.awt.Color(0, 0, 0));
-        fieldCautaSejur.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fieldCautaSejurActionPerformed(evt);
-            }
-        });
-        cautareSejur.add(fieldCautaSejur);
-        fieldCautaSejur.setBounds(260, 160, 180, 30);
-
-        butonCautaSejur.setBackground(new java.awt.Color(0, 102, 102));
-        butonCautaSejur.setFont(new java.awt.Font("Lucida Bright", 1, 14)); // NOI18N
-        butonCautaSejur.setForeground(new java.awt.Color(255, 255, 255));
-        butonCautaSejur.setText("Cauta");
-        butonCautaSejur.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                butonCautaSejurActionPerformed(evt);
-            }
-        });
-        cautareSejur.add(butonCautaSejur);
-        butonCautaSejur.setBounds(300, 210, 100, 40);
-
-        tabelCautaSejur.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        tabelCautaSejur.setForeground(new java.awt.Color(0, 0, 0));
-        tabelCautaSejur.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-
-            },
-            new String [] {
-                "Oras plecare", "Destinatie", "Data plecare", "Data sosire"
-            }
-        ));
-        jScrollPane5.setViewportView(tabelCautaSejur);
-
-        cautareSejur.add(jScrollPane5);
-        jScrollPane5.setBounds(0, 280, 700, 130);
-
-        jButton10.setBackground(new java.awt.Color(0, 102, 102));
-        jButton10.setFont(new java.awt.Font("Lucida Bright", 1, 14)); // NOI18N
-        jButton10.setForeground(new java.awt.Color(255, 255, 255));
-        jButton10.setText("Inapoi");
-        jButton10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
-            }
-        });
-        cautareSejur.add(jButton10);
-        jButton10.setBounds(540, 430, 100, 40);
-
-        jLabel53.setIcon(new javax.swing.ImageIcon(getClass().getResource("/agentieturism/sejur1.jpg"))); // NOI18N
-        cautareSejur.add(jLabel53);
-        jLabel53.setBounds(0, 0, 700, 540);
-
-        getContentPane().add(cautareSejur);
-        cautareSejur.setBounds(0, 0, 700, 520);
-
-        cautareCircuit.setLayout(null);
-
-        jLabel69.setFont(new java.awt.Font("Lucida Bright", 1, 18)); // NOI18N
-        jLabel69.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel69.setText("Cauta Circuit");
-        cautareCircuit.add(jLabel69);
-        jLabel69.setBounds(280, 20, 120, 40);
-
-        radioDenumireCircuit.setFont(new java.awt.Font("Lucida Bright", 1, 14)); // NOI18N
-        radioDenumireCircuit.setForeground(new java.awt.Color(0, 0, 0));
-        radioDenumireCircuit.setText("Denumire");
-        cautareCircuit.add(radioDenumireCircuit);
-        radioDenumireCircuit.setBounds(100, 110, 102, 28);
-
-        radioOras.setFont(new java.awt.Font("Lucida Bright", 1, 14)); // NOI18N
-        radioOras.setForeground(new java.awt.Color(0, 0, 0));
-        radioOras.setText("Oras");
-        cautareCircuit.add(radioOras);
-        radioOras.setBounds(310, 110, 80, 28);
-
-        radioTara.setFont(new java.awt.Font("Lucida Bright", 1, 14)); // NOI18N
-        radioTara.setForeground(new java.awt.Color(0, 0, 0));
-        radioTara.setText("Tara");
-        cautareCircuit.add(radioTara);
-        radioTara.setBounds(480, 110, 130, 28);
-
-        fieldCircuit.setFont(new java.awt.Font("Lucida Bright", 1, 14)); // NOI18N
-        fieldCircuit.setForeground(new java.awt.Color(0, 0, 0));
-        fieldCircuit.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fieldCircuitActionPerformed(evt);
-            }
-        });
-        cautareCircuit.add(fieldCircuit);
-        fieldCircuit.setBounds(260, 160, 180, 30);
-
-        butonCautaCircuit.setBackground(new java.awt.Color(0, 102, 102));
-        butonCautaCircuit.setFont(new java.awt.Font("Lucida Bright", 1, 14)); // NOI18N
-        butonCautaCircuit.setForeground(new java.awt.Color(255, 255, 255));
-        butonCautaCircuit.setText("Cauta");
-        butonCautaCircuit.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                butonCautaCircuitActionPerformed(evt);
-            }
-        });
-        cautareCircuit.add(butonCautaCircuit);
-        butonCautaCircuit.setBounds(300, 210, 100, 40);
-
-        tabelCircuit.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        tabelCircuit.setForeground(new java.awt.Color(0, 0, 0));
-        tabelCircuit.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-
-            },
-            new String [] {
-                "Denumire", "Orase", "Tari"
-            }
-        ));
-        jScrollPane4.setViewportView(tabelCircuit);
-
-        cautareCircuit.add(jScrollPane4);
-        jScrollPane4.setBounds(0, 280, 700, 130);
-
-        jButton9.setBackground(new java.awt.Color(0, 102, 102));
-        jButton9.setFont(new java.awt.Font("Lucida Bright", 1, 14)); // NOI18N
-        jButton9.setForeground(new java.awt.Color(255, 255, 255));
-        jButton9.setText("Inapoi");
-        jButton9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton9ActionPerformed(evt);
-            }
-        });
-        cautareCircuit.add(jButton9);
-        jButton9.setBounds(540, 430, 100, 40);
-
-        jLabel70.setFont(new java.awt.Font("Lucida Bright", 1, 16)); // NOI18N
-        jLabel70.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel70.setText("Filtrare dupa");
-        cautareCircuit.add(jLabel70);
-        jLabel70.setBounds(30, 60, 120, 40);
-
-        jLabel54.setIcon(new javax.swing.ImageIcon(getClass().getResource("/agentieturism/bgClouds.jpg"))); // NOI18N
-        cautareCircuit.add(jLabel54);
-        jLabel54.setBounds(0, 0, 700, 520);
-
-        getContentPane().add(cautareCircuit);
-        cautareCircuit.setBounds(0, 0, 700, 520);
-
-        cautareZbor.setLayout(null);
-
-        jLabel25.setFont(new java.awt.Font("Lucida Bright", 1, 18)); // NOI18N
-        jLabel25.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel25.setText("Filtrare zbor dupa");
-        cautareZbor.add(jLabel25);
-        jLabel25.setBounds(50, 50, 180, 22);
-
-        Destinatie.setFont(new java.awt.Font("Lucida Bright", 1, 14)); // NOI18N
-        Destinatie.setForeground(new java.awt.Color(0, 0, 0));
-        Destinatie.setText("Destinatie");
-        cautareZbor.add(Destinatie);
-        Destinatie.setBounds(50, 90, 130, 28);
-
-        dataPlecareRadio.setFont(new java.awt.Font("Lucida Bright", 1, 14)); // NOI18N
-        dataPlecareRadio.setForeground(new java.awt.Color(0, 0, 0));
-        dataPlecareRadio.setText("Data Plecare");
-        cautareZbor.add(dataPlecareRadio);
-        dataPlecareRadio.setBounds(190, 90, 140, 28);
-
-        oraPlecareButon.setFont(new java.awt.Font("Lucida Bright", 1, 14)); // NOI18N
-        oraPlecareButon.setForeground(new java.awt.Color(0, 0, 0));
-        oraPlecareButon.setText("Ora Plecare");
-        cautareZbor.add(oraPlecareButon);
-        oraPlecareButon.setBounds(350, 90, 140, 28);
-
-        oraSosireButon.setFont(new java.awt.Font("Lucida Bright", 1, 14)); // NOI18N
-        oraSosireButon.setForeground(new java.awt.Color(0, 0, 0));
-        oraSosireButon.setText("Ora Sosire");
-        cautareZbor.add(oraSosireButon);
-        oraSosireButon.setBounds(500, 90, 130, 28);
-
-        butonCautaFiltrare.setBackground(new java.awt.Color(0, 102, 102));
-        butonCautaFiltrare.setFont(new java.awt.Font("Lucida Bright", 1, 14)); // NOI18N
-        butonCautaFiltrare.setForeground(new java.awt.Color(255, 255, 255));
-        butonCautaFiltrare.setText("Cauta");
-        butonCautaFiltrare.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                butonCautaFiltrareActionPerformed(evt);
-            }
-        });
-        cautareZbor.add(butonCautaFiltrare);
-        butonCautaFiltrare.setBounds(430, 140, 80, 33);
-
-        fieldFiltrare.setFont(new java.awt.Font("Lucida Bright", 0, 12)); // NOI18N
-        fieldFiltrare.setForeground(new java.awt.Color(0, 0, 0));
-        cautareZbor.add(fieldFiltrare);
-        fieldFiltrare.setBounds(150, 140, 200, 30);
-
-        tabelZboruri1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        tabelZboruri1.setForeground(new java.awt.Color(0, 0, 0));
-        tabelZboruri1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-
-            },
-            new String [] {
-                "Destinatie", "Data plecare", "Data sosire", "Ora plecare", "Ora sosire", "Avion"
-            }
-        ));
-        jScrollPane6.setViewportView(tabelZboruri1);
-
-        cautareZbor.add(jScrollPane6);
-        jScrollPane6.setBounds(0, 220, 700, 130);
-
-        jButton5.setBackground(new java.awt.Color(0, 102, 102));
-        jButton5.setFont(new java.awt.Font("Lucida Bright", 1, 14)); // NOI18N
-        jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setText("Rezerva Acum!");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
-            }
-        });
-        cautareZbor.add(jButton5);
-        jButton5.setBounds(250, 380, 160, 50);
-
-        jButton7.setBackground(new java.awt.Color(0, 102, 102));
-        jButton7.setFont(new java.awt.Font("Lucida Bright", 1, 14)); // NOI18N
-        jButton7.setForeground(new java.awt.Color(255, 255, 255));
-        jButton7.setText("Inapoi");
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
-            }
-        });
-        cautareZbor.add(jButton7);
-        jButton7.setBounds(540, 450, 90, 33);
-
-        jLabel55.setIcon(new javax.swing.ImageIcon(getClass().getResource("/agentieturism/clientbg.jpg"))); // NOI18N
-        cautareZbor.add(jLabel55);
-        jLabel55.setBounds(0, 0, 700, 540);
-
-        getContentPane().add(cautareZbor);
-        cautareZbor.setBounds(0, 0, 700, 520);
 
         rezervarileMele.setLayout(null);
 
@@ -2248,18 +2248,13 @@ public class PaginaClient extends javax.swing.JFrame {
         DefaultTableModel model = (DefaultTableModel) tabelOrase.getModel();
         try{
             Connection con = getConnection();
-            String sql = "select c.denumire, a.denumire, pc.valoare_circuit, s.denumire_sezon\n" +
-                            "from circuit c, agentie a, pret_circuit pc, sezon s\n" +
-                            "where c.cod_circuit = pc.circuit_cod_circuit\n" +
-                            "and a.cod_agentie = pc.cod_agentie_circuit\n" +
-                            "and pc.sezon_cod_Sezon = s.cod_sezon\n" +
-                            "and c.denumire = ?";
+            String sql = "SELECT nume_oras, tara FROM oras,circuit WHERE oras.cod_circuit = circuit.cod_circuit and denumire=?";
             PreparedStatement pstm = con.prepareStatement(sql);
             pstm.setString(1, comboCircuite.getSelectedItem().toString());
             ResultSet rs = pstm.executeQuery();
             model.setRowCount(0);            
             while(rs.next()){
-               model.addRow(new Object[]{""  + rs.getString("c.denumire"), rs.getInt("valoare_circuit"), rs.getString("denumire_sezon"), rs.getString("a.denumire")});
+               model.addRow(new Object[]{""  + rs.getString(1), rs.getString(2) });
             }
            
         } catch (SQLException ex) {
@@ -2464,8 +2459,10 @@ public class PaginaClient extends javax.swing.JFrame {
                 PreparedStatement pstm = con.prepareStatement(sql);
                 pstm.setString(1, text);
                 ResultSet rs = pstm.executeQuery();
-                while(rs.next()){
+                if(rs.next()){
                     model.addRow(new Object[]{"" + rs.getString(1), rs.getString(2), rs.getString(3),rs.getString(4)});
+                } else {
+                    JOptionPane.showMessageDialog(this,"Nu au fost gasite rezultate pentru orasul de plecare ales!");
                 }
                 fieldCautaSejur.setText("");
                 radioOrasPlecare.setSelected(false);
@@ -2474,8 +2471,10 @@ public class PaginaClient extends javax.swing.JFrame {
                 PreparedStatement pstm = con.prepareStatement(sql);
                 pstm.setString(1, text);
                 ResultSet rs = pstm.executeQuery();
-                while(rs.next()){
+                if (rs.next()){
                     model.addRow(new Object[]{"" + rs.getString(1), rs.getString(2), rs.getString(3),rs.getString(4)});
+                } else {
+                    JOptionPane.showMessageDialog(this,"Nu au fost gasite rezultate pentru destinatia aleasa!");
                 }
                 fieldCautaSejur.setText("");
                 radioOrasSosire.setSelected(false);
@@ -2485,8 +2484,10 @@ public class PaginaClient extends javax.swing.JFrame {
                 PreparedStatement pstm = con.prepareStatement(sql);
                 pstm.setString(1, text);
                 ResultSet rs = pstm.executeQuery();
-                while(rs.next()){
+                if (rs.next()){
                     model.addRow(new Object[]{"" + rs.getString(1), rs.getString(2), rs.getString(3),rs.getString(4)});
+                } else {
+                    JOptionPane.showMessageDialog(this,"Nu au fost gasite rezultate pentru data aleasa!");
                 }
                 fieldCautaSejur.setText("");
                 radioDataPlecare.setSelected(false);
@@ -2516,8 +2517,10 @@ public class PaginaClient extends javax.swing.JFrame {
                 PreparedStatement pstm = con.prepareStatement(sql);
                 pstm.setString(1, text);
                 ResultSet rs = pstm.executeQuery();
-                while(rs.next()){
+                if (rs.next()){
                     model.addRow(new Object[]{"" + rs.getString(1), rs.getString(2), rs.getString(3)});
+                } else {
+                    JOptionPane.showMessageDialog(this,"Nu au fost gasite rezultate pentru circuitul ales!");
                 }
                 fieldCircuit.setText("");
                 radioDenumireCircuit.setSelected(false);
@@ -2526,8 +2529,10 @@ public class PaginaClient extends javax.swing.JFrame {
                 PreparedStatement pstm = con.prepareStatement(sql);
                 pstm.setString(1, text);
                 ResultSet rs = pstm.executeQuery();
-                while(rs.next()){
+                if (rs.next()){
                     model.addRow(new Object[]{"" + rs.getString(1), rs.getString(2), rs.getString(3)});
+                } else {
+                    JOptionPane.showMessageDialog(this,"Nu au fost gasite rezultate pentru orasul ales!");
                 }
                 fieldCircuit.setText("");
                 radioOras.setSelected(false);
@@ -2536,8 +2541,10 @@ public class PaginaClient extends javax.swing.JFrame {
                 PreparedStatement pstm = con.prepareStatement(sql);
                 pstm.setString(1, text);
                 ResultSet rs = pstm.executeQuery();
-                while(rs.next()){
+                if (rs.next()){
                     model.addRow(new Object[]{"" + rs.getString(1), rs.getString(2), rs.getString(3)});
+                } else {
+                    JOptionPane.showMessageDialog(this,"Nu au fost gasite rezultate pentru tara aleasa!");
                 }
                 fieldCircuit.setText("");
                 radioTara.setSelected(false);
@@ -2569,10 +2576,12 @@ public class PaginaClient extends javax.swing.JFrame {
                 PreparedStatement pstm = con.prepareStatement(sql);
                 pstm.setString(1, textIntrodus);
                 ResultSet rs2 = pstm.executeQuery();
-                while(rs2.next() && rs1.next()){
+                if(rs2.next() && rs1.next()){
                     model.addRow(new Object[]{"" + rs2.getString(2), rs2.getString(3), rs2.getString(4), rs2.getString(5), rs2.getString(6),
                         rs1.getString(1)});
-            }
+                }else {
+                    JOptionPane.showMessageDialog(this,"Nu au fost gasite rezultate pentru destinatia aleasa!");
+                }
             fieldFiltrare.setText("");
             Destinatie.setSelected(false);
         } else if(dataPlecareRadio.isSelected() == true){
@@ -2580,10 +2589,12 @@ public class PaginaClient extends javax.swing.JFrame {
             PreparedStatement pstm = con.prepareStatement(sql);
             pstm.setString(1, textIntrodus);
             ResultSet rs2 = pstm.executeQuery();
-            while(rs2.next() && rs1.next()){
+            if(rs2.next() && rs1.next()){
                 model.addRow(new Object[]{"" + rs2.getString(2), rs2.getString(3), rs2.getString(4), rs2.getString(5), rs2.getString(6),
                     rs1.getString(1)});
-        }
+            } else {
+                    JOptionPane.showMessageDialog(this,"Nu au fost gasite rezultate pentru data aleasa!");
+            }
         fieldFiltrare.setText("");
         dataPlecareRadio.setSelected(false);
         } else if(oraPlecareButon.isSelected() == true){
@@ -2591,10 +2602,12 @@ public class PaginaClient extends javax.swing.JFrame {
             PreparedStatement pstm = con.prepareStatement(sql);
             pstm.setInt(1, Integer.parseInt(textIntrodus));
             ResultSet rs2 = pstm.executeQuery();
-            while(rs2.next() && rs1.next()){
+            if(rs2.next() && rs1.next()){
                 model.addRow(new Object[]{"" + rs2.getString(2), rs2.getString(3), rs2.getString(4), rs2.getString(5), rs2.getString(6),
                     rs1.getString(1)});
-        }
+            } else {
+                    JOptionPane.showMessageDialog(this,"Nu au fost gasite rezultate pentru ora de plecare aleasa!");
+            }
         fieldFiltrare.setText("");
         oraPlecareButon.setSelected(false);
         } else if(oraSosireButon.isSelected() == true){
@@ -2602,10 +2615,12 @@ public class PaginaClient extends javax.swing.JFrame {
             PreparedStatement pstm = con.prepareStatement(sql);
             pstm.setInt(1, Integer.parseInt(textIntrodus));
             ResultSet rs2 = pstm.executeQuery();
-            while(rs2.next() && rs1.next()){
+            if (rs2.next() && rs1.next()){
                 model.addRow(new Object[]{"" + rs2.getString(2), rs2.getString(3), rs2.getString(4), rs2.getString(5), rs2.getString(6),
                     rs1.getString(1)});
-        }
+            } else {
+                    JOptionPane.showMessageDialog(this,"Nu au fost gasite rezultate pentru ora sosirii aleasa!");
+            }
         fieldFiltrare.setText("");
         oraSosireButon.setSelected(false);
         }
